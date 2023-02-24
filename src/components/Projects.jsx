@@ -15,7 +15,7 @@ const Projects = () => {
         <br />
       </div>
       <div className='flex items-center lg:flex-row flex-col-reverse gap-5'>
-        <img src={Projects.image} data-aos='fade-right' alt="...." className='max-w-[45vw] min-w-[22rem]' />
+        <img src={Projects.image} data-aos='fade-right' alt="...." className='max-w-[45vw] min-w-[22rem] img-shadow' />
         <Swiper  pagination={{ 
           clickable: true, 
          }} data-aos='fade-left' spaceBetween={20} modules={[Pagination]} className='rounded-3xl pb-16 max-w-xs drop-shadow-primary self-start' >
