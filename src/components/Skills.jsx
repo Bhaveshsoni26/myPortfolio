@@ -37,7 +37,7 @@ const Skills = () => {
 
   return <section id="skills" className="min-h-fit bg-bg_light_primary">
     {/* modal */}
-    <Model isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
+    <Model isOpen={modalIsOpen} shouldCloseOnOverlayClick={false} shouldCloseOnEsc={false} onRequestClose={closeModal} style={customStyles}>
       <div className="flex">
         <div className="flex item-center gap-2 grow">
           <img className="h-10" src={selectSkill?.logo} alt="...." />
