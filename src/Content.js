@@ -23,7 +23,7 @@ import avatar3 from "./assets/images/Testimonials/avatar3.png";
 import avatar4 from "./assets/images/Testimonials/avatar4.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
-import Hireme_person2 from "./assets/images/Hireme/person.png";
+import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -33,7 +33,19 @@ import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
+const getCountForExperience = () => {
+  const today = new Date();
+  const start = new Date("2023-01-04");
+  const diff = today - start;
+  let time = Math.floor(diff / (1000 * 60 * 60 * 24 * 24));
+  let p = "Months";
 
+  if(time > 12){
+    time = Math.floor(time / 12);
+    p = "Years";
+  }
+  return {count: time , period: p};
+};
 export const content = {
   nav: [
     {
@@ -65,8 +77,8 @@ export const content = {
     image: Hero_person,
     hero_content: [
       {
-        count: "8+",
-        text: "Years of Experinse in Web development",
+        count: `${getCountForExperience().count}+`,
+        text: `${getCountForExperience().period} of Experinse in Web development`,
       },
       {
         count: "20+",
@@ -194,23 +206,23 @@ export const content = {
     subtitle: "GET IN TOUCH",
     social_media: [
       {
-        text: "codeaprogram@gmail.com",
+        text: "bhaveshsoni28105@gmail.com",
         icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
+        link: "mailto:bhaveshsoni28105@gmail.com",
       },
       {
-        text: "+91 1234 56778",
+        text: "+91 7043398501",
         icon: MdCall,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/7043398501?text=Hello%20Bhavesh%20Soni",
       },
       {
-        text: "codeaprogram",
+        text: "bhaveshsoni_official_",
         icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
+        link: "https://instagram.com/bhaveshsoni_official_" ,
       },
     ],
   },
   Footer: {
-    text: "All © Copy Right Reserved 2022",
+    text: "Copyright © BhaveshDev.in 2023",
   },
 };

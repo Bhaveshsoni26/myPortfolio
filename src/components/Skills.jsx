@@ -13,6 +13,7 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     maxWidth: '23rem',
     width: '90%',
+    borderRadius: '8%',
   },
   overlay: {
     padding: '2rem',
@@ -34,7 +35,7 @@ const Skills = () => {
     setIsOpen(false);
   }
 
-  return <section className="min-h-fit bg-bg_light_primary">
+  return <section id="skills" className="min-h-fit bg-bg_light_primary">
     {/* modal */}
     <Model isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
       <div className="flex">
@@ -62,17 +63,17 @@ const Skills = () => {
 
     {/* content */}
     <div className="md:container px-5 py-14">
-      <h2 className="md:text-3x1 text-2x1">
+      <h2 className="md:text-3x1 text-2x1" data-aos='fade-down'>
         {skills.title}
       </h2>
-      <h4 className="text-gray">
+      <h4 className="text-gray" data-aos='fade-down'>
         {skills.subtitle}
       </h4>
       <br />
       <div className="flex flex-wrap gap-4 justify-center">
         {
           skills.skills_content.map((skill, index) => (
-            <div key={index} className="bg-white sm:cursor-pointer relative group w-full flex item-center gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200">
+            <div key={index} data-aos='fade-up' data-aos-delay={index * 400} className="bg-white sm:cursor-pointer relative group w-full flex item-center gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200">
               <div>
                 <img src={skill.logo} alt="..." className="w-10 group-hover:scale-125 duration-200" />
               </div>
