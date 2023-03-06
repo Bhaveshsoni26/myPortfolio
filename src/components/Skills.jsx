@@ -49,12 +49,12 @@ const Skills = () => {
       </div>
       
       <br />
-      <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, natus.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat praesentium facere, nulla rem officia. Laboriosam velit deleniti consequuntur non?</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id architecto iste!</li>
+      <ul className="list-disc px-4 font-Poppins sm:text-sm text-xs !leading-7">
+        {
+          selectSkill?.Indesc.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))
+        }
       </ul>
       <br />
       

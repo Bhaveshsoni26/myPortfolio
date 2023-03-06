@@ -2,8 +2,8 @@
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Service from "./components/Services";
-import Projects from "./components/Projects";
-import Testimonials from "./components/Testimonials";
+// import Projects from "./components/Projects";
+// import Testimonials from "./components/Testimonials";
 import Hireme from "./components/Hireme";
 import Contact from "./components/Contact";
 import Navbar from "./Layouts/Navbar";
@@ -22,8 +22,8 @@ const App = () => {
       <Hero />
       <Skills />
       <Service />
-      <Projects />
-      <Testimonials />
+      {/* <Projects /> */}
+      {/* <Testimonials /> */}
       <Hireme />
       <Contact />
       <footer className="text-center py-3">
