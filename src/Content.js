@@ -38,7 +38,7 @@ import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall } from "react-icons/md";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
-import { BiUser } from "react-icons/bi";
+import { BiCode, BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 const getCountForExperience = () => {
@@ -62,15 +62,15 @@ export const content = {
     },
     {
       link: "#skills",
-      icon: BiUser,
+      icon: BiCode,
     },
     {
       link: "#services",
       icon: RiServiceLine,
     },
     {
-      link: "#projects",
-      icon: RiProjectorLine,
+      link: "#Hireme",
+      icon: BiUser,
     },
     {
       link: "#contact",

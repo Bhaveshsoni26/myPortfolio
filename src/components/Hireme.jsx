@@ -2,7 +2,7 @@ import { content } from "../Content";
 
 const Hireme = () => {
   const { Hireme } = content;
-  return <section className="bg-bg_light_primary">
+  return <section className="bg-bg_light_primary" id="Hireme">
     <div className="md:container px-5 pt-14">
       <h2 className="md:text-3x1 text-2x1" data-aos='fade-down'>{Hireme.title}</h2>
       <h4 className="text-gray" data-aos='fade-down'>{Hireme.subtitle}</h4>
