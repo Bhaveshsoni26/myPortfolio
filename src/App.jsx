@@ -14,7 +14,7 @@ import { useEffect } from "react";
 
 const App = () => {
   useEffect(() => {
-    Aos.init({ duration: 1200, offset: 100 });
+    Aos.init({ duration: 1200, offset: 0 });
   }, []);
   return (
     <div className="">
