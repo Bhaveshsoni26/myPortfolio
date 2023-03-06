@@ -49,7 +49,7 @@ const Skills = () => {
       </div>
       
       <br />
-      <ul className="list-disc px-4 font-Poppins sm:text-sm text-xs !leading-7">
+      <ul className="list-disc px-4 font-Poppins sm:text-sm text-xs !leading-5">
         {
           selectSkill?.Indesc.map((item, index) => (
             <li key={index}>{item}</li>
